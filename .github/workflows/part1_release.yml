@@ -49,7 +49,7 @@ jobs:
         with:
           image-ref: 'ghcr.io/${{ steps.prep.outputs.repo_name }}:scan-tmp'
           format: 'table'
-          exit-code: '0'
+          exit-code: '1'
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
